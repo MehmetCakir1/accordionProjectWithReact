@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Questions from './components/Questions'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='row container m-auto main p-3'>
+        <div className='col-md-4 d-flex align-items-center justify-content-center text-center'>
+            <h2 className='text-danger'>Questions And Answers About Login</h2>
+        </div>
+        <div className='col-md-8'>
+            <Questions/>
+        </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
